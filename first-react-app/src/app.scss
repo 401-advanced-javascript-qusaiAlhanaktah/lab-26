@@ -1,0 +1,43 @@
+$background-color: aqua;
+
+body {
+  h1{
+    text-align: center;
+    color: $background-color;
+  }
+}
+body{
+  text-align: center;
+  background-color: darkgoldenrod;
+}
+
+footer{
+  clear: both;
+  text-align: center;
+  margin-left: 42%;
+  position: absolute;
+  bottom: 0%;
+  // padding: 200px;
+  border: 40px;
+  background-color: cornflowerblue;
+}
+
+
+
+h3{
+  text-align: center;
+  color: blue;
+  margin-top: 200px;
+}
+.button{
+  border-radius: 10px;
+  height: 50px;
+  transition-delay: 200ms;
+  width: 200px;
+}
+button:hover{
+background-color: coral;
+}
+section{
+  margin-right: 0em;
+}
