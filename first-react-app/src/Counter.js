@@ -2,25 +2,22 @@ import React from 'react';
 
 
 class Counter extends React.Component {
-    constructor(properties) {
-      super(properties)
-      this.counter = 0;
-    }
-   
+  constructor(properties) {
+    super(properties);
+    this.counter = 0;
+  }
+
     handLeIncrementClick = e => {
       e.preventDefault();
       let counter = this.counter++;
-      // console.log(counter);
-      this.setState({counter: counter++})
-  }
+      this.setState({counter: counter++});
+    }
   handLeDecrementClick = e => {
     e.preventDefault();
-    // let counter = e.target.value;
     let counter = this.counter--;
-    // console.log(counter);
-    this.setState({counter: counter++})
+    this.setState({counter: counter++});
   }
-  
+
   render() {
     return (
       <section>
@@ -28,8 +25,8 @@ class Counter extends React.Component {
         <button className="button" onClick={this.handLeIncrementClick}>click for Increment</button>
         <button className="button" onClick={this.handLeDecrementClick}>click for Decrement</button>
       </section>
-    )
+    );
   }
-  }
+}
 
 export default Counter;
